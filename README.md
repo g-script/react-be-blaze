@@ -135,8 +135,8 @@ Actually, react-be-blaze is no more than a library providing you ready-to-use co
 It‘s **small**, not such as BlazeCSS - *which isn‘t included* -, but still :
 
 ```shell
-             Asset     Size
-react-be-blaze.min.js     49.4 kB
+                Asset     Size
+react-be-blaze.min.js     49.3 kB
 ```
 
 It‘s **easy to install**:
@@ -159,8 +159,6 @@ var reactBeBlaze = require('react-be-blaze')
 var Button = reactBeBlaze.Button
 ```
 
-[demo]: https://nicolas-goudry.github.io/react-be-blaze
-[contribute]: CONTRIBUTE.md
 [blaze]: http://blazecss.com
 [blaze docs]: http://blazecss.com/objects/grid/
 [bootstrap]: http://getbootstrap.com
