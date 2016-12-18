@@ -70,6 +70,13 @@ const states = [
   'warning'
 ]
 
+const toastPositions = [
+  'topleft',
+  'topright',
+  'bottomright',
+  'bottomleft'
+]
+
 const defaults = {
   buttonTypes: 'button',
   extendedSizes: 'medium'
@@ -84,5 +91,6 @@ export {
   positions,
   sizes,
   states,
+  toastPositions,
   defaults
 }
