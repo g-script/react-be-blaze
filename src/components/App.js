@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Container, Nav, NavItem, Grid, Cell, Link } from 'react-be-blaze'
+import { Container, Nav, NavItem, Grid, Cell } from 'react-be-blaze'
 
 import Addresses from './showcase/Addresses'
 import Alerts from './showcase/Alerts'
@@ -16,7 +16,6 @@ export default class App extends Component {
       size: 'medium',
       behavior: 'full'
     }]
-    const repoLink = <Link href='http://github.com/nicolas-goudry/react-blazecss'>GitHub</Link>
 
     return (
       <div>
@@ -24,7 +23,9 @@ export default class App extends Component {
           <NavItem noClick>react-be-blaze</NavItem>
           <NavItem>Objects</NavItem>
           <NavItem state='brand' active>Components</NavItem>
-          <NavItem right state='error' link={repoLink} />
+          <NavItem right state='error' link='http://github.com/g-script/react-be-blaze'>
+            GitHub
+          </NavItem>
         </Nav>
         <Container size='xlarge'>
           <Grid wrap align='top' responsiveness={responsiveness}>
