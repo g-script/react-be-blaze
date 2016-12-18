@@ -7,7 +7,7 @@
     "lib"
   ],
   "scripts": {
-    "lint": "eslint . --fix",
+    "lint": "eslint webpack.config.js ./src --fix",
     "build": "better-npm-run build"
   },
   "betterScripts": {
