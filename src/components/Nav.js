@@ -1,6 +1,7 @@
 import classnames from 'classnames'
 import React, { PropTypes } from 'react'
 
+import { Link } from './Typography'
 import { positions, states } from '../misc/constants'
 
 const Nav = ({ children, className, fixed, inline, position, ...rest }) => {
@@ -40,19 +41,11 @@ const NavItem = ({ active, children, className, noClick, link, right, state, ...
     }
   )
 
-  if (typeof link === 'function') {
-    const LinkComponent = link
-
+  if (link) {
     return (
-      <LinkComponent className={className} {...rest}>
+      <Link href={link} className={className} {...rest}>
         {children}
-      </LinkComponent>
-    )
-  } else if (link) {
-    return (
-      <a href={link} className={className} {...rest}>
-        {children}
-      </a>
+      </Link>
     )
   }
 
@@ -67,11 +60,7 @@ NavItem.propTypes = {
   active: PropTypes.bool,
   children: PropTypes.any,
   className: PropTypes.string,
-  link: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.node,
-    PropTypes.element
-  ]),
+  link: PropTypes.string,
   right: PropTypes.bool,
   state: PropTypes.oneOf(states)
 }
