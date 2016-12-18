@@ -1,0 +1,57 @@
+{
+  "name": "react-be-blaze",
+  "version": "1.0.0",
+  "description": "A tiny React wrapper for Blaze components.",
+  "main": "lib/react-be-blaze.min.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint . --fix",
+    "build": "better-npm-run build"
+  },
+  "betterScripts": {
+    "build": {
+      "command": "npm run lint && webpack --progress --colors",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  },
+  "keywords": [
+    "react",
+    "blaze",
+    "blazecss",
+    "react-be-blaze"
+  ],
+  "author": "Nicolas Goudry <goudry.nicolas@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "better-npm-run": "0.0.13",
+    "classnames": "^2.2.5",
+    "eslint": "^3.11.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-jsx": "^3.2.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "react": "^15.4.1",
+    "webpack": "^1.13.3",
+    "webpack-validator": "^2.2.9"
+  },
+  "peerDependencies": {
+    "blaze": "3.2.0"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
