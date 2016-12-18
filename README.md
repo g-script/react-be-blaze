@@ -1,4 +1,4 @@
-# react-be-blaze &middot; [![Build Status](https://travis-ci.org/g-script/react-be-blaze.svg?branch=dev)](https://travis-ci.org/g-script/react-be-blaze)
+# react-be-blaze &middot; [![Build Status](https://travis-ci.org/g-script/react-be-blaze.svg?branch=master)](https://travis-ci.org/g-script/react-be-blaze)
 
 ## `TL;DR;`
 
