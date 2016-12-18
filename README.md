@@ -1,2 +1,3 @@
 # react-be-blaze
-A tiny React wrapper for Blaze components.
+
+react-be-blaze website source code.
