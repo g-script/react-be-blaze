@@ -78,7 +78,7 @@ switch (process.env.NODE_ENV) {
         devtool: 'source-map',
         output: {
           path: PATHS.build,
-          publicPath: '/',
+          publicPath: '/react-be-blaze/',
           filename: '[name].[chunkhash].js',
           chunkFilename: '[chunkhash].js'
         }
