@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "react-be-blaze website source code",
   "scripts": {
+    "build": "better-npm-run build",
     "start": "better-npm-run start",
     "lint": "eslint webpack.config.js ./src --fix"
   },
