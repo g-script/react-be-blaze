@@ -79,8 +79,7 @@ switch (process.env.NODE_ENV) {
         output: {
           path: PATHS.build,
           publicPath: '/react-be-blaze/',
-          filename: '[name].[chunkhash].js',
-          chunkFilename: '[chunkhash].js'
+          filename: '[name].js'
         }
       },
       parts.clean(PATHS.build),

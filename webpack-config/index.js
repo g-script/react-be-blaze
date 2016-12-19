@@ -97,7 +97,7 @@ module.exports.extractCSS = function (paths) {
       }]
     },
     // Output extracted CSS to a file
-    plugins: [new ExtractTextPlugin('[name].[chunkhash].css')]
+    plugins: [new ExtractTextPlugin('[name].css')]
   }
 }
 
