@@ -71,8 +71,8 @@
   "dependencies": {
     "blaze": "3.2.0",
     "classnames": "^2.2.5",
-    "react-be-blaze": "git+https://github.com/g-script/react-be-blaze.git",
     "react": "^15.4.1",
+    "react-be-blaze": "^1.0.0",
     "react-dom": "^15.4.1"
   },
   "standard": {
