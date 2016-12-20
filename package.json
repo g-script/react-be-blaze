@@ -24,6 +24,10 @@
     "blazecss",
     "react-be-blaze"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:g-script/react-be-blaze.git"
+  },
   "author": "Nicolas Goudry <goudry.nicolas@gmail.com>",
   "license": "MIT",
   "devDependencies": {
