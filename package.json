@@ -27,6 +27,10 @@
     "blazecss",
     "react-be-blaze"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:g-script/react-be-blaze.git"
+  },
   "author": "Nicolas Goudry <goudry.nicolas@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -67,8 +71,8 @@
   "dependencies": {
     "blaze": "3.2.0",
     "classnames": "^2.2.5",
-    "react-be-blaze": "git+https://github.com/g-script/react-be-blaze.git",
     "react": "^15.4.1",
+    "react-be-blaze": "^1.0.0",
     "react-dom": "^15.4.1"
   },
   "standard": {
