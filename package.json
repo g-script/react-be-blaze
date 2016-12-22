@@ -53,7 +53,8 @@
     "webpack-validator": "^2.2.9"
   },
   "peerDependencies": {
-    "blaze": "3.2.0"
+    "blaze": "3.2.0",
+    "react": "^15.4.1"
   },
   "standard": {
     "parser": "babel-eslint"
