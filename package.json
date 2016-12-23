@@ -73,7 +73,8 @@
     "classnames": "^2.2.5",
     "react": "^15.4.1",
     "react-be-blaze": "^1.0.0",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "react-router": "^3.0.0"
   },
   "standard": {
     "parser": "babel-eslint"
