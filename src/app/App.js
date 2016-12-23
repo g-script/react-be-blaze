@@ -1,10 +1,8 @@
 import React from 'react'
-import { Container, Grid, Nav } from 'react-be-blaze'
+import { Container, Grid, Nav, NavItem } from 'react-be-blaze'
 import { IndexLink, Link } from 'react-router'
 
 import 'blaze/dist/blaze.min.css'
-
-import NavItem from '../components/NavItem'
 
 const responsiveness = [{
   size: 'small',
@@ -16,7 +14,7 @@ const responsiveness = [{
 
 const App = ({ children }) => (
   <div>
-    <Nav inline>
+    <Nav inline fixed>
       <NavItem customLink={IndexLink} to='/' state='info' activeClassName='c-nav__item--active'>
         react-be-blaze
       </NavItem>
@@ -26,11 +24,11 @@ const App = ({ children }) => (
       <NavItem customLink={Link} to='/components' state='brand' activeClassName='c-nav__item--active'>
         Components
       </NavItem>
-      <NavItem right state='error' link='http://github.com/g-script/react-be-blaze'>
+      <NavItem right state='error' link='http://github.com/g-script/react-be-blaze' target='_blank'>
         GitHub
       </NavItem>
     </Nav>
-    <Container size='xlarge'>
+    <Container size='xlarge' style={{ padding: '5em 0' }}>
       <Grid wrap align='top' responsiveness={responsiveness}>
         {children}
       </Grid>
