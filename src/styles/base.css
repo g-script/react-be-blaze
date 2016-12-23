@@ -2,6 +2,9 @@ html,
 body {
   background: var(--white);
   box-sizing: border-box;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 *,
