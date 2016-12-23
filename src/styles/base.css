@@ -1,4 +1,15 @@
 html,
 body {
   background: var(--white);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+abbr[title] {
+  text-decoration: none;
 }
