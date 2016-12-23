@@ -30,7 +30,7 @@ Nav.propTypes = {
   position: PropTypes.oneOf(positions)
 }
 
-const NavItem = ({ active, children, className, noClick, link, right, state, ...rest }) => {
+const NavItem = ({ active, children, className, customLink, noClick, link, right, state, ...rest }) => {
   className = classnames(
     className, {
       'c-nav__item': !noClick,
@@ -40,6 +40,16 @@ const NavItem = ({ active, children, className, noClick, link, right, state, ...
       [`c-nav__item--${state}`]: state
     }
   )
+
+  if (customLink) {
+    const CustomLink = customLink
+
+    return (
+      <CustomLink className={className} {...rest}>
+        {children}
+      </CustomLink>
+    )
+  }
 
   if (link) {
     return (
@@ -60,6 +70,10 @@ NavItem.propTypes = {
   active: PropTypes.bool,
   children: PropTypes.any,
   className: PropTypes.string,
+  customLink: PropTypes.oneOfType([
+    PropTypes.function,
+    PropTypes.string
+  ]),
   link: PropTypes.string,
   right: PropTypes.bool,
   state: PropTypes.oneOf(states)
