@@ -1,6 +1,5 @@
 import React from 'react'
-
-import { Heading, Paragraph, Code, Grid, Cell, Alert } from 'react-be-blaze'
+import { Alert, Cell, Code, Grid, Heading, Paragraph } from 'react-be-blaze'
 
 const Alerts = () => {
   return (
