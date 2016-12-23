@@ -9,3 +9,7 @@ body {
 *::after {
   box-sizing: inherit;
 }
+
+abbr[title] {
+  text-decoration: none;
+}
