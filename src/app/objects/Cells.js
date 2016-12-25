@@ -1,9 +1,12 @@
 import React from 'react'
-import { Code, Heading, Link, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
+import { Code, Heading, Link, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
 
 const Cells = () => (
   <div>
     <Heading size='xlarge'>Cells</Heading>
+    <Paragraph>
+      Grids without Cells? Nope.
+    </Paragraph>
     <Code multiline>
       {
 `import React from 'react'
