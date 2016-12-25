@@ -48,7 +48,7 @@ export default Example`
           <TableCell className='props-table__small-column'>responsiveness</TableCell>
           <TableCell>{`arrayOf({ behavior: fit|full, size: small|medium|large })`}</TableCell>
           <TableCell className='props-table__small-column'>—</TableCell>
-          <TableCell>Grid responsiveness (see <Link href='http://blazecss.com/objects/grid/#responsiveness' target='_blank'>BlazeCSS doc</Link>).</TableCell>
+          <TableCell className="fix-table-cell-with-child-element">Grid responsiveness (see <Link href='http://blazecss.com/objects/grid/#responsiveness' target='_blank'>BlazeCSS doc</Link>).</TableCell>
         </TableRow>
         <TableRow>
           <TableCell className='props-table__small-column'>wrap</TableCell>

@@ -69,7 +69,7 @@ export default Example`
           <TableCell className='props-table__small-column'>responsiveness</TableCell>
           <TableCell>{`arrayOf({ size: small|medium|large, width: number })`}</TableCell>
           <TableCell className='props-table__small-column'>—</TableCell>
-          <TableCell>Responsive suffix (see <Link href='http://blazecss.com/objects/grid/#responsive-suffixes' target='_blank'>BlazeCSS doc</Link>).</TableCell>
+          <TableCell className="fix-table-cell-with-child-element">Responsive suffix (see <Link href='http://blazecss.com/objects/grid/#responsive-suffixes' target='_blank'>BlazeCSS doc</Link>).</TableCell>
         </TableRow>
         <TableRow>
           <TableCell className='props-table__small-column'>size</TableCell>
