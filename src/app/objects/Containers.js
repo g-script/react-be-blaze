@@ -1,5 +1,6 @@
 import React from 'react'
 import { Code, Heading, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
+import Highlight from 'react-highlight'
 
 const Containers = () => (
   <div>
@@ -7,16 +8,16 @@ const Containers = () => (
     <Paragraph>
       Containers provide media query screen width restrictions on your content.
     </Paragraph>
-    <Code multiline>
+    <Highlight className='javascript'>
       {
-`import React from 'react'
+        `import React from 'react'
 import { Container } from 'react-be-blaze'
 
-const Example = () => <Container screen='/* … */' size='/* … */'>Example</Container>
+const Example = () => (<Container screen='/* … */' size='/* … */'>Example</Container>)
 
 export default Example`
       }
-      </Code>
+    </Highlight>
     <Table striped>
       <TableHead>
         <TableCell className='props-table__small-column'>Props</TableCell>

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Code, Heading, Link, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
+import { Heading, Link, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
+import Highlight from 'react-highlight'
 
 const Grids = () => (
   <div>
@@ -7,7 +8,7 @@ const Grids = () => (
     <Paragraph>
       The grid is the easiest way to produce a fluid responsive layout. Its easy to use and very flexible.
     </Paragraph>
-    <Code multiline>
+    <Highlight className='javascript'>
       {
 `import React from 'react'
 import { Grid } from 'react-be-blaze'
@@ -23,7 +24,7 @@ const Example = () => (
 
 export default Example`
       }
-      </Code>
+    </Highlight>
     <Table striped>
       <TableHead>
         <TableCell className='props-table__small-column'>Props</TableCell>

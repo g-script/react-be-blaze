@@ -1,5 +1,6 @@
 import React from 'react'
-import { Code, Heading, Link, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
+import { Heading, Link, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
+import Highlight from 'react-highlight'
 
 const Cells = () => (
   <div>
@@ -7,7 +8,7 @@ const Cells = () => (
     <Paragraph>
       Grids without Cells? Nope.
     </Paragraph>
-    <Code multiline>
+    <Highlight className='javascript'>
       {
 `import React from 'react'
 import { Cell } from 'react-be-blaze'
@@ -26,7 +27,7 @@ const Example = () => (
 
 export default Example`
       }
-      </Code>
+    </Highlight>
     <Table striped>
       <TableHead>
         <TableCell className='props-table__small-column'>Props</TableCell>

@@ -3,6 +3,7 @@ import { Container, Grid, Nav, NavItem } from 'react-be-blaze'
 import { IndexLink, Link } from 'react-router'
 
 import 'blaze/dist/blaze.min.css'
+import 'highlight.js/styles/monokai-sublime.css'
 
 const responsiveness = [{
   size: 'small',
