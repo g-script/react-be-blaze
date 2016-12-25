@@ -1,8 +1,8 @@
 import React from 'react'
 import { Alert, Cell, Heading, Link, Paragraph } from 'react-be-blaze'
 
-import Addresses from './showcase/components/Addresses'
-import Alerts from './showcase/components/Alerts'
+import Addresses from './components/Addresses'
+import Alerts from './components/Alerts'
 
 const Components = () => (
   <Cell>

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Alert, Cell, Heading, Link, Paragraph } from 'react-be-blaze'
 
-import Containers from './showcase/objects/Containers'
-import Grids from './showcase/objects/Grids'
-import Cells from './showcase/objects/Cells'
+import Containers from './objects/Containers'
+import Grids from './objects/Grids'
+import Cells from './objects/Cells'
 
 const Objects = () => (
   <Cell>
