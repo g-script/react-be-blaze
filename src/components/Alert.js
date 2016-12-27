@@ -27,8 +27,4 @@ Alert.propTypes = {
   state: PropTypes.oneOf(states)
 }
 
-Alert.defaultProps = {
-  closable: true
-}
-
 export default Alert
