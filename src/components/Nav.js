@@ -70,7 +70,7 @@ NavItem.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
   customLink: PropTypes.oneOfType([
-    PropTypes.function,
+    PropTypes.func,
     PropTypes.string
   ]),
   link: PropTypes.string,
