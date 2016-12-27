@@ -7,12 +7,14 @@
     "lib"
   ],
   "scripts": {
-    "lint": "eslint webpack.config.js ./src --fix",
+    "lint": "eslint webpack.config.js ./src",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "echo Need tests! && exit 0",
     "build": "better-npm-run build"
   },
   "betterScripts": {
     "build": {
-      "command": "npm run lint && webpack --progress --colors",
+      "command": "npm run lint && npm run test && webpack --progress --colors",
       "env": {
         "NODE_ENV": "production"
       }
