@@ -129,6 +129,7 @@ const Mono = ({ children, className, ...rest }) => {
 }
 
 Mono.propTypes = {
+  children: PropTypes.any,
   className: PropTypes.string
 }
 

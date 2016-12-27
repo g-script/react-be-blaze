@@ -34,6 +34,13 @@ const AccordionItem = ({ children, className, id, label, ...rest }) => {
   ]
 }
 
+AccordionItem.propTypes = {
+  children: PropTypes.any,
+  className: PropTypes.string,
+  id: PropTypes.string,
+  label: PropTypes.string
+}
+
 export {
   Accordion,
   AccordionItem

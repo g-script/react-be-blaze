@@ -22,7 +22,6 @@ const Nav = ({ children, className, fixed, inline, position, ...rest }) => {
 }
 
 Nav.propTypes = {
-  brand: PropTypes.string,
   children: PropTypes.any,
   className: PropTypes.string,
   fixed: PropTypes.bool,

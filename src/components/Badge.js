@@ -21,6 +21,7 @@ const Badge = ({ children, className, ghost, round, state, ...rest }) => {
 }
 
 Badge.propTypes = {
+  children: PropTypes.any,
   className: PropTypes.string,
   ghost: PropTypes.bool,
   round: PropTypes.bool,
