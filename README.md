@@ -1,10 +1,10 @@
-# react-be-blaze &middot; [![Build Status](https://travis-ci.org/g-script/react-be-blaze.svg?branch=master)](https://travis-ci.org/g-script/react-be-blaze)
+# react-be-blaze &middot; [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) &middot; [![Build Status](https://travis-ci.org/g-script/react-be-blaze.svg?branch=master)](https://travis-ci.org/g-script/react-be-blaze) 
 
 ## `TL;DR;`
 
 react-be-blaze is a tiny React wrapper for [BlazeCSS][blaze] components.
 
-~~Check out the [demo]()!~~ **Demo coming soon!**
+Check out the [demo][demo]! :warning: UNDER CONSTRUCTION :warning:
 
 ## Intro
 
@@ -159,6 +159,16 @@ var reactBeBlaze = require('react-be-blaze')
 var Button = reactBeBlaze.Button
 ```
 
+It has a **great [demo][demo]**! :warning: UNDER CONSTRUCTION :warning:
+
+## I would like to contribute
+
+Oh boy! Thank you a lot :smile: !
+
+This project is open-source, so you are welcome to contribute to it! All you have to do is follow the [contribution guide][contributing] :wink:
+
+[demo]: https://g-script.github.io/react-be-blaze
+[contributing]: CONTRIBUTING.md
 [blaze]: http://blazecss.com
 [blaze docs]: http://blazecss.com/objects/grid/
 [bootstrap]: http://getbootstrap.com
