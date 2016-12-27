@@ -1,4 +1,4 @@
-# react-be-blaze &middot; [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) &middot; [![Build Status](https://travis-ci.org/g-script/react-be-blaze.svg?branch=master)](https://travis-ci.org/g-script/react-be-blaze) 
+# react-be-blaze &middot; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) &middot; [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) &middot; ![Build Status](https://david-dm.org/g-script/react-be-blaze.svg) &middot; [![Build Status](https://travis-ci.org/g-script/react-be-blaze.svg?branch=master)](https://travis-ci.org/g-script/react-be-blaze) 
 
 ## `TL;DR;`
 
