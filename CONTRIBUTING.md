@@ -18,14 +18,14 @@ This project is following the [JavaScript Standard Style][standard]. Linting is 
 Aside from this code style, you’ll have to follow a small set of simple rules:
 
 * Use `camelCase` for variables
-* Use `ParamCase` for React component names
-* Use `ParamCase` for React component files
+* Use `PascalCase` for React component names
+* Use `PascalCase` for React component files
 * Use `param-case` for other files
 * Destructured props must be ordered alphabetically
 * `import`s and `export`s keys must be ordered alphabetically
 * `import`s are top-level (beginning of file) and must be ordered alphabetically by package name
 * `export`s are low-level (end of file), use default export as often as possible
-* For pure components, always use destructuring for props you need and rest for other props to dispatch (eg: `const a = ({ props, i, need, ...rest }) => {}`)
+* For pure components, always use destructuring for props you need and `rest` for other props to dispatch (eg: `const a = ({ props, i, need, ...rest }) => {}`)
 
 If you don’t follow those rules, your PRs won’t be merged until you’ve done needed changes to your code.
 
