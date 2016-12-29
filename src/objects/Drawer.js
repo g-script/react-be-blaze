@@ -23,7 +23,7 @@ Drawer.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
   hidden: PropTypes.bool,
-  position: PropTypes.oneOf(positions)
+  position: PropTypes.oneOf(positions).isRequired
 }
 
 Drawer.defaultProps = {
