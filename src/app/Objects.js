@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Alert, Cell, Heading } from 'react-be-blaze'
 
 import Cells from './objects/Cells'
@@ -10,38 +10,19 @@ import Medias from './objects/Medias'
 import Modals from './objects/Modals'
 import Panels from './objects/Panels'
 
-export default class Objects extends Component {
-  constructor (props) {
-    super(props)
+const Objects = () => (
+  <Cell>
+    <Heading size='super'>Objects</Heading>
+    <Alert state='success' closable={false}>Objects docs are up to date!</Alert>
+    <Containers />
+    <Grids />
+    <Cells />
+    <Images />
+    <Medias />
+    <Modals />
+    <Drawers />
+    <Panels />
+  </Cell>
+)
 
-    this.closeDocStatus = this.closeDocStatus.bind(this)
-    this.state = {
-      docStatusClosed: false
-    }
-  }
-
-  closeDocStatus (e) {
-    e.preventDefault()
-
-    this.setState({
-      docStatusClosed: !this.state.docStatusClosed
-    })
-  }
-
-  render () {
-    return (
-      <Cell>
-        <Heading size='super'>Objects</Heading>
-        <Alert state='success' onCloseClick={this.closeDocStatus}>Objects docs are up to date!</Alert>
-        <Containers />
-        <Grids />
-        <Cells />
-        <Images />
-        <Medias />
-        <Modals />
-        <Drawers />
-        <Panels />
-      </Cell>
-    )
-  }
-}
+export default Objects
