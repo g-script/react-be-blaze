@@ -6,7 +6,7 @@ const validate = require('webpack-validator')
 
 const libraryName = pack.name
 
-var config = {
+const config = {
   entry: path.join(__dirname, 'src', 'index'),
   devtool: 'source-map',
   output: {
