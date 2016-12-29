@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading, Link, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
+import { Code, Heading, Link, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
 import Highlight from 'react-highlight'
 
 const Grids = () => (
@@ -15,9 +15,9 @@ import { Grid } from 'react-be-blaze'
 
 const Example = () => (
   <Grid align={…}
-        behavior={…}
+        className={…}
         noGutter={…}
-        size={…}
+        responsiveness={…}
         wrap={…}>
     Example
   </Grid>)
@@ -40,6 +40,12 @@ export default Example`
           <TableCell>Vertical alignment.</TableCell>
         </TableRow>
         <TableRow>
+          <TableCell className='props-table__small-column'>className</TableCell>
+          <TableCell>string</TableCell>
+          <TableCell className='props-table__small-column'>—</TableCell>
+          <TableCell>CSS class.</TableCell>
+        </TableRow>
+        <TableRow>
           <TableCell className='props-table__small-column'>noGutter</TableCell>
           <TableCell>true, false</TableCell>
           <TableCell className='props-table__small-column'>false</TableCell>
@@ -49,7 +55,7 @@ export default Example`
           <TableCell className='props-table__small-column'>responsiveness</TableCell>
           <TableCell>{`arrayOf({ behavior: fit|full, size: small|medium|large })`}</TableCell>
           <TableCell className='props-table__small-column'>—</TableCell>
-          <TableCell className="fix-table-cell-with-child-element">Grid responsiveness (see <Link href='http://blazecss.com/objects/grid/#responsiveness' target='_blank'>BlazeCSS doc</Link>).</TableCell>
+          <TableCell className='fix-table-cell-with-child-element'>Grid responsiveness (see <Link href='http://blazecss.com/objects/grid/#responsiveness' target='_blank'>BlazeCSS doc</Link>).</TableCell>
         </TableRow>
         <TableRow>
           <TableCell className='props-table__small-column'>wrap</TableCell>

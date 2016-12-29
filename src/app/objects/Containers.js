@@ -13,7 +13,7 @@ const Containers = () => (
         `import React from 'react'
 import { Container } from 'react-be-blaze'
 
-const Example = () => (<Container screen='/* … */' size='/* … */'>Example</Container>)
+const Example = () => (<Container className={…} screen='/* … */' size='/* … */'>Example</Container>)
 
 export default Example`
       }
@@ -26,6 +26,12 @@ export default Example`
         <TableCell>Description</TableCell>
       </TableHead>
       <TableBody>
+        <TableRow>
+          <TableCell className='props-table__small-column'>className</TableCell>
+          <TableCell>string</TableCell>
+          <TableCell className='props-table__small-column'>—</TableCell>
+          <TableCell>CSS class.</TableCell>
+        </TableRow>
         <TableRow>
           <TableCell className='props-table__small-column'>screen</TableCell>
           <TableCell>xsmall, small, medium, large, xlarge, super</TableCell>

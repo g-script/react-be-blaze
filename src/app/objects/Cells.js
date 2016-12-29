@@ -15,6 +15,7 @@ import { Cell } from 'react-be-blaze'
 
 const Example = () => (
   <Cell align={…}
+        className={…}
         fixed={…}
         hidden={…}
         noGutter={…}
@@ -41,6 +42,12 @@ export default Example`
           <TableCell>top, center, bottom</TableCell>
           <TableCell className='props-table__small-column'>—</TableCell>
           <TableCell>Vertical alignment.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className='props-table__small-column'>className</TableCell>
+          <TableCell>string</TableCell>
+          <TableCell className='props-table__small-column'>—</TableCell>
+          <TableCell>CSS class.</TableCell>
         </TableRow>
         <TableRow>
           <TableCell className='props-table__small-column'>fixed</TableCell>
