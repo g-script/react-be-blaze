@@ -1,21 +1,47 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Alert, Cell, Heading, Link, Paragraph } from 'react-be-blaze'
 
-import Containers from './objects/Containers'
-import Grids from './objects/Grids'
 import Cells from './objects/Cells'
+import Containers from './objects/Containers'
+import Drawers from './objects/Drawers'
+import Grids from './objects/Grids'
+import Images from './objects/Images'
+import Medias from './objects/Medias'
+import Modals from './objects/Modals'
+import Panels from './objects/Panels'
 
-const Objects = () => (
-  <Cell>
-    <Heading size='super'>Objects</Heading>
-    <Alert state='warning' closable={false}>Please be patient, I’m currently writing these docs!</Alert>
-    <Paragraph>
-      Can’t wait? <Link href='https://github.com/g-script/react-be-blaze/tree/master/src/objects' target='_blank'>Read the source code!</Link>
-    </Paragraph>
-    <Containers />
-    <Grids />
-    <Cells />
-  </Cell>
-)
+export default class Objects extends Component {
+  constructor (props) {
+    super(props)
 
-export default Objects
+    this.closeDocStatus = this.closeDocStatus.bind(this)
+    this.state = {
+      docStatusClosed: false
+    }
+  }
+
+  closeDocStatus (e) {
+    e.preventDefault()
+
+    this.setState({
+      docStatusClosed: !this.state.docStatusClosed
+    })
+  }
+
+  render () {
+    return (
+      <Cell>
+        <Heading size='super'>Objects</Heading>
+        <Alert state='success' onCloseClick={this.closeDocStatus}>Objects docs are up to date!</Alert>
+        <Containers />
+        <Grids />
+        <Cells />
+        <Images />
+        <Medias />
+        <Modals />
+        <Drawers />
+        <Panels />
+      </Cell>
+    )
+  }
+}
