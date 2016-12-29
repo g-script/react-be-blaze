@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Alert, Cell, Heading, Link, Paragraph } from 'react-be-blaze'
+import { Alert, Cell, Heading } from 'react-be-blaze'
 
 import Cells from './objects/Cells'
 import Containers from './objects/Containers'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Code, Heading, Link, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
+import { Heading, Link, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
 import Highlight from 'react-highlight'
 
 const Grids = () => (
