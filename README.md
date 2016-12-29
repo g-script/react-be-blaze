@@ -1,4 +1,19 @@
-# react-be-blaze &middot; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) &middot; [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/) &middot; ![Build Status](https://david-dm.org/g-script/react-be-blaze.svg) &middot; [![Build Status](https://travis-ci.org/g-script/react-be-blaze.svg?branch=master)](https://travis-ci.org/g-script/react-be-blaze) 
+[npm:img]: https://img.shields.io/npm/v/react-be-blaze.svg?style=flat-square
+[npm:url]: https://www.npmjs.org/package/react-be-blaze
+
+[standard:img]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
+[standard:url]: http://standardjs.com
+
+[dependencies:img]: https://david-dm.org/g-script/react-be-blaze.svg?style=flat-square
+[dependencies:url]: https://github.com/g-script/react-be-blaze/blob/master/package.json#L55
+
+[build:img]: https://travis-ci.org/g-script/react-be-blaze.svg?branch=master
+[build:url]: https://travis-ci.org/g-script/react-be-blaze
+
+[license:img]: https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square
+[license:url]: https://opensource.org/licenses/MIT
+
+# react-be-blaze &middot; [![NPM version][npm:img]][npm:url] &middot; [![Standard - JavaScript Style Guide][standard:img]][standard:url] &middot; [![Dependencies][dependencies:img]][dependencies:url] &middot; [![Build Status][build:img]][build:url] &middot; [![License: MIT][license:img]][license:url]
 
 ## `TL;DR;`
 
@@ -169,12 +184,16 @@ This project is open-source, so you are welcome to contribute to it! All you hav
 
 [demo]: https://g-script.github.io/react-be-blaze
 [contributing]: CONTRIBUTING.md
+
 [blaze]: http://blazecss.com
 [blaze docs]: http://blazecss.com/objects/grid/
+
 [bootstrap]: http://getbootstrap.com
 [bootstrap docs]: http://getbootstrap.com/css/#buttons
+
 [foundation]: http://foundation.zurb.com
 [foundation docs]: http://foundation.zurb.com/sites/docs/button.html
+
 [mdl]: https://getmdl.io/started
-[css specificity]: https://www.w3.org/TR/css3-selectors/#specificity
 [itcss]: https://speakerdeck.com/dafed/managing-css-projects-with-itcss
+[css specificity]: https://www.w3.org/TR/css3-selectors/#specificity
