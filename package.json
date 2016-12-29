@@ -10,7 +10,9 @@
     "lint": "eslint webpack.config.js ./src",
     "lint:fix": "npm run lint -- --fix",
     "test": "echo Need tests! && exit 0",
-    "build": "better-npm-run build"
+    "start": "start-storybook -p 6006",
+    "build": "better-npm-run build",
+    "build:storybook": "build-storybook"
   },
   "betterScripts": {
     "build": {
