@@ -1,13 +1,27 @@
 import React from 'react'
-import { Alert, Cell, Heading, Link, Paragraph } from 'react-be-blaze'
+import { Alert, Cell, Heading } from 'react-be-blaze'
+
+import Cells from './objects/Cells'
+import Containers from './objects/Containers'
+import Drawers from './objects/Drawers'
+import Grids from './objects/Grids'
+import Images from './objects/Images'
+import Medias from './objects/Medias'
+import Modals from './objects/Modals'
+import Panels from './objects/Panels'
 
 const Objects = () => (
   <Cell>
     <Heading size='super'>Objects</Heading>
-    <Alert state='warning'>Please be patient, I’m currently writing these docs!</Alert>
-    <Paragraph>
-      Can’t wait? <Link href='https://github.com/g-script/react-be-blaze/tree/master/src/objects' target='_blank'>Read the source code!</Link>
-    </Paragraph>
+    <Alert state='success' closable={false}>Objects docs are up to date!</Alert>
+    <Containers />
+    <Grids />
+    <Cells />
+    <Images />
+    <Medias />
+    <Modals />
+    <Drawers />
+    <Panels />
   </Cell>
 )
 

@@ -1,0 +1,7 @@
+.c-nav__item {
+  box-shadow: none !important;
+}
+
+.fix-table-cell-with-child-element {
+  display: table-cell !important;
+}
