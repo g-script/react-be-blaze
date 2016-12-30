@@ -45,7 +45,7 @@ const Button = ({ active, block, children, className, close, ghost, round, size,
       'c-button--close'
     )
 
-    return <button className={className}>&times;</button>
+    return <button className={className} {...rest}>&times;</button>
   }
 
   switch (type) {
