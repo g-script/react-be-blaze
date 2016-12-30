@@ -19,6 +19,7 @@ const ButtonGroup = ({ children, className, round, ...rest }) => {
 }
 
 ButtonGroup.propTypes = {
+  children: PropTypes.any,
   className: PropTypes.string,
   round: PropTypes.bool
 }
@@ -44,7 +45,7 @@ const Button = ({ active, block, children, className, close, ghost, round, size,
       'c-button--close'
     )
 
-    return <button className={className}>&times;</button>
+    return <button className={className} {...rest}>&times;</button>
   }
 
   switch (type) {
@@ -64,7 +65,9 @@ const Button = ({ active, block, children, className, close, ghost, round, size,
 }
 
 Button.propTypes = {
+  active: PropTypes.bool,
   block: PropTypes.bool,
+  children: PropTypes.any,
   className: PropTypes.string,
   close: PropTypes.bool,
   ghost: PropTypes.bool,

@@ -16,6 +16,7 @@ const Address = ({ children, className, heading, ...rest }) => {
 }
 
 Address.propTypes = {
+  children: PropTypes.any,
   className: PropTypes.string,
   heading: PropTypes.string
 }

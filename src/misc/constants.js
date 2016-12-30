@@ -49,6 +49,12 @@ const gridCellWidths = [
   '100'
 ]
 
+const panelNavPositions = [
+  'top',
+  'bottom',
+  'both'
+]
+
 const positions = [
   'top',
   'bottom',
@@ -88,6 +94,7 @@ export {
   buttonTypes,
   extendedSizes,
   gridCellWidths,
+  panelNavPositions,
   positions,
   sizes,
   states,

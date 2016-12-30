@@ -1,10 +1,28 @@
-# react-be-blaze &middot; [![Build Status](https://travis-ci.org/g-script/react-be-blaze.svg?branch=master)](https://travis-ci.org/g-script/react-be-blaze)
+[npm:img]: https://img.shields.io/npm/v/react-be-blaze.svg?style=flat-square
+[npm:url]: https://www.npmjs.org/package/react-be-blaze
+
+[standard:img]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
+[standard:url]: http://standardjs.com
+
+[dependencies:img]: https://david-dm.org/g-script/react-be-blaze.svg?style=flat-square
+[dependencies:url]: https://github.com/g-script/react-be-blaze/blob/master/package.json#L55
+
+[peer_dependencies:img]: https://david-dm.org/g-script/react-be-blaze/peer-status.svg?style=flat-square
+[peer_dependencies:url]: https://david-dm.org/g-script/react-be-blaze?type=peer
+
+[build:img]: https://travis-ci.org/g-script/react-be-blaze.svg?branch=master
+[build:url]: https://travis-ci.org/g-script/react-be-blaze
+
+[license:img]: https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square
+[license:url]: https://opensource.org/licenses/MIT
+
+# react-be-blaze &middot; [![NPM version][npm:img]][npm:url] &middot; [![Standard - JavaScript Style Guide][standard:img]][standard:url] &middot; [![Dependencies][dependencies:img]][dependencies:url] &middot; [![Peer Dependencies][peer_dependencies:img]][peer_dependencies:url] [![Build Status][build:img]][build:url] &middot; [![License: MIT][license:img]][license:url]
 
 ## `TL;DR;`
 
 react-be-blaze is a tiny React wrapper for [BlazeCSS][blaze] components.
 
-~~Check out the [demo]()!~~ **Demo coming soon!**
+Check out the [demo][demo]! :warning: UNDER CONSTRUCTION :warning:
 
 ## Intro
 
@@ -159,12 +177,26 @@ var reactBeBlaze = require('react-be-blaze')
 var Button = reactBeBlaze.Button
 ```
 
+It has a **great [demo][demo]**! :warning: UNDER CONSTRUCTION :warning:
+
+## I would like to contribute
+
+Oh boy! Thank you a lot :smile: !
+
+This project is open-source, so you are welcome to contribute to it! All you have to do is follow the [contribution guide][contributing] :wink:
+
+[demo]: https://g-script.github.io/react-be-blaze
+[contributing]: CONTRIBUTING.md
+
 [blaze]: http://blazecss.com
 [blaze docs]: http://blazecss.com/objects/grid/
+
 [bootstrap]: http://getbootstrap.com
 [bootstrap docs]: http://getbootstrap.com/css/#buttons
+
 [foundation]: http://foundation.zurb.com
 [foundation docs]: http://foundation.zurb.com/sites/docs/button.html
+
 [mdl]: https://getmdl.io/started
-[css specificity]: https://www.w3.org/TR/css3-selectors/#specificity
 [itcss]: https://speakerdeck.com/dafed/managing-css-projects-with-itcss
+[css specificity]: https://www.w3.org/TR/css3-selectors/#specificity

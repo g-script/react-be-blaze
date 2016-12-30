@@ -1,34 +1,49 @@
 import classnames from 'classnames'
-import React, { PropTypes } from 'react'
+import React, { Component, PropTypes } from 'react'
 
 import { Button } from './Button'
 import { states } from '../misc/constants'
 
-const Alert = ({ children, className, closable, state, ...rest }) => {
-  className = classnames(
-    className,
-    'c-alert', {
-      [`c-alert--${state}`]: state
+export default class Alert extends Component {
+  static propTypes = {
+    children: PropTypes.any,
+    className: PropTypes.string,
+    closable: PropTypes.bool,
+    onCloseClick: PropTypes.func,
+    state: PropTypes.oneOf(states)
+  }
+
+  constructor (props) {
+    super(props)
+
+    this.closeAlert = this.closeAlert.bind(this)
+    this.state = {
+      visible: true
     }
-  )
+  }
 
-  return (
-    <div className={className} {...rest}>
-      {closable ? <Button close /> : null}
-      {children}
-    </div>
-  )
+  closeAlert () {
+    this.setState({
+      visible: false
+    })
+  }
+
+  render () {
+    let { children, className, closable, onCloseClick, state, style, ...rest } = this.props
+
+    className = classnames(
+      className,
+      'c-alert', {
+        [`c-alert--${state}`]: state
+      }
+    )
+    style = Object.assign({}, style, { display: this.state.visible ? '' : 'none' })
+
+    return (
+      <div className={className} style={style} {...rest}>
+        {closable ? <Button onClick={onCloseClick || this.closeAlert} close /> : null}
+        {children}
+      </div>
+    )
+  }
 }
-
-Alert.propTypes = {
-  children: PropTypes.any,
-  className: PropTypes.string,
-  closable: PropTypes.bool,
-  state: PropTypes.oneOf(states)
-}
-
-Alert.defaultProps = {
-  closable: true
-}
-
-export default Alert

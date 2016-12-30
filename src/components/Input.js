@@ -136,6 +136,7 @@ const Select = ({ children, className, hint, label, state, ...rest }) => {
 }
 
 Select.propTypes = {
+  children: PropTypes.any,
   className: PropTypes.string,
   hint: PropTypes.string,
   label: PropTypes.string,

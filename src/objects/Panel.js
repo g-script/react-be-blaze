@@ -1,6 +1,8 @@
 import classnames from 'classnames'
 import React, { PropTypes } from 'react'
 
+import { panelNavPositions } from '../misc/constants'
+
 const PanelContainer = ({ children, className, ...rest }) => {
   className = classnames(
     className,
@@ -37,7 +39,8 @@ const Panel = ({ children, className, nav, ...rest }) => {
 
 Panel.propTypes = {
   children: PropTypes.any,
-  className: PropTypes.string
+  className: PropTypes.string,
+  nav: PropTypes.oneOf(panelNavPositions)
 }
 
 export {

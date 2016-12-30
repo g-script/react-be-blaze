@@ -1,7 +1,6 @@
 import classnames from 'classnames'
 import React, { PropTypes } from 'react'
 
-import { Link } from './Typography'
 import { positions, states } from '../misc/constants'
 
 const Nav = ({ children, className, fixed, inline, position, ...rest }) => {
@@ -22,7 +21,6 @@ const Nav = ({ children, className, fixed, inline, position, ...rest }) => {
 }
 
 Nav.propTypes = {
-  brand: PropTypes.string,
   children: PropTypes.any,
   className: PropTypes.string,
   fixed: PropTypes.bool,
@@ -53,9 +51,9 @@ const NavItem = ({ active, children, className, customLink, noClick, link, right
 
   if (link) {
     return (
-      <Link href={link} className={className} {...rest}>
+      <a href={link} className={className} {...rest}>
         {children}
-      </Link>
+      </a>
     )
   }
 
@@ -71,7 +69,7 @@ NavItem.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
   customLink: PropTypes.oneOfType([
-    PropTypes.function,
+    PropTypes.func,
     PropTypes.string
   ]),
   link: PropTypes.string,
