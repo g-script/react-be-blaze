@@ -154,7 +154,7 @@ It‘s **small**, not such as BlazeCSS - *which isn‘t included* -, but still :
 
 ```shell
                 Asset     Size
-react-be-blaze.min.js     49.5 kB
+react-be-blaze.min.js     80.7 kB
 ```
 
 It‘s **easy to install**:
