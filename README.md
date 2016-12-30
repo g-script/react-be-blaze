@@ -7,13 +7,16 @@
 [dependencies:img]: https://david-dm.org/g-script/react-be-blaze.svg?style=flat-square
 [dependencies:url]: https://github.com/g-script/react-be-blaze/blob/master/package.json#L55
 
+[peer_dependencies:img]: https://david-dm.org/g-script/react-be-blaze/peer-status.svg?style=flat-square
+[peer_dependencies:url]: https://david-dm.org/g-script/react-be-blaze?type=peer
+
 [build:img]: https://travis-ci.org/g-script/react-be-blaze.svg?branch=master
 [build:url]: https://travis-ci.org/g-script/react-be-blaze
 
 [license:img]: https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square
 [license:url]: https://opensource.org/licenses/MIT
 
-# react-be-blaze &middot; [![NPM version][npm:img]][npm:url] &middot; [![Standard - JavaScript Style Guide][standard:img]][standard:url] &middot; [![Dependencies][dependencies:img]][dependencies:url] &middot; [![Build Status][build:img]][build:url] &middot; [![License: MIT][license:img]][license:url]
+# react-be-blaze &middot; [![NPM version][npm:img]][npm:url] &middot; [![Standard - JavaScript Style Guide][standard:img]][standard:url] &middot; [![Dependencies][dependencies:img]][dependencies:url] &middot; [![Peer Dependencies][peer_dependencies:img]][peer_dependencies:url] [![Build Status][build:img]][build:url] &middot; [![License: MIT][license:img]][license:url]
 
 ## `TL;DR;`
 
