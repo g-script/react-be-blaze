@@ -26,6 +26,9 @@ Aside from this code style, you’ll have to follow a small set of simple rules:
 * `import`s are top-level (beginning of file) and must be ordered alphabetically by package name
 * `export`s are low-level (end of file), use default export as often as possible
 * For pure components, always use destructuring for props you need and `rest` for other props to dispatch (eg: `const a = ({ props, i, need, ...rest }) => {}`)
+* **Always PR on the `dev` branch**.
+* If your PR fixes a bug, name it `Fixed #insert_bug_number`.
+* Use scoped commit (eg: one commit per component changed) and
 
 If you don’t follow those rules, your PRs won’t be merged until you’ve done needed changes to your code.
 
@@ -97,6 +100,8 @@ $ npm run build
 ```
 
 Building lib will lint and test the code first.
+
+## :smiling_imp: Pray for the merge
 
 [code of conduct]: CODE_OF_CONDUCT.md
 [node]: https://nodejs.org/en/download
