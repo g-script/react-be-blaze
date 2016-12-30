@@ -28,7 +28,10 @@ const config = {
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ minimize: true })
+    new webpack.optimize.UglifyJsPlugin({
+      mangle: false,
+      minimize: true
+    })
   ],
   externals: [{
     react: {
