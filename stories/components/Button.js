@@ -1,11 +1,30 @@
 import { action, storiesOf } from '@kadira/storybook'
 import React from 'react'
 
-import { Button, Heading } from '../../src'
+import { Button, ButtonGroup, Heading } from '../../src'
 
 storiesOf('components/Button.js', module)
-  .add('class Button', () => (
+  .add('ButtonGroup', () => (
     <div className='wrapper c-text'>
+      <Heading size='large'>Default</Heading>
+      <div className='wrapper'>
+        <ButtonGroup>
+          <Button onClick={action('clicked button group brand button')} state='brand'>Button</Button>
+          <Button onClick={action('clicked button group default button')}>Button</Button>
+        </ButtonGroup>
+      </div>
+      <Heading size='large'>Rounded</Heading>
+      <div className='wrapper'>
+        <ButtonGroup round>
+          <Button onClick={action('clicked rounded button group brand button')} state='brand'>Button</Button>
+          <Button onClick={action('clicked rounded button group default button')}>Button</Button>
+          <Button onClick={action('clicked rounded button group info button')} state='info'>Button</Button>
+        </ButtonGroup>
+      </div>
+    </div>
+  ))
+  .add('Button', () => (
+    <div className='wrapper c-text button-margin'>
       <Heading size='large'>Basic</Heading>
       <div className='wrapper'>
         <Button onClick={action('clicked button')}>Button</Button>
