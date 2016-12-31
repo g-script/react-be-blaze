@@ -2,9 +2,9 @@ import React from 'react'
 import { hashHistory, IndexRoute, Route, Router } from 'react-router'
 
 import AppContainer from './AppContainer'
-import Components from './Components'
-import Objects from './Objects'
-import Welcome from './Welcome'
+import Components from './views/Components'
+import Objects from './views/Objects'
+import Welcome from './views/Welcome'
 
 const App = () => (
   <Router history={hashHistory}>
