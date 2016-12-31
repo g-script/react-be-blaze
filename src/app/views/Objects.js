@@ -1,27 +1,46 @@
 import React from 'react'
-import { Alert, Cell, Heading } from 'react-be-blaze'
+import { Cell, Grid, Heading, List, ListItem } from 'react-be-blaze'
+import { Link } from 'react-router'
 
-import Cells from './objects/Cells'
-import Containers from './objects/Containers'
-import Drawers from './objects/Drawers'
-import Grids from './objects/Grids'
-import Images from './objects/Images'
-import Medias from './objects/Medias'
-import Modals from './objects/Modals'
-import Panels from './objects/Panels'
-
-const Objects = () => (
+const Objects = ({ children }) => (
   <Cell>
-    <Heading size='super'>Objects</Heading>
-    <Alert state='success' closable>Objects docs are up to date!</Alert>
-    <Containers />
-    <Grids />
-    <Cells />
-    <Images />
-    <Medias />
-    <Modals />
-    <Drawers />
-    <Panels />
+    <Grid responsiveness={[{ size: 'small', behavior: 'full' }]}>
+      <Cell width={15}>
+        <Heading size='medium'>Objects</Heading>
+        <List unstyled>
+          <ListItem>
+            <Link className='c-link' to='/objects'>All</Link>
+          </ListItem>
+          <ListItem>
+            <Link className='c-link' to='/objects/containers'>Containers</Link>
+          </ListItem>
+          <ListItem>
+            <Link className='c-link' to='/objects/grids'>Grids</Link>
+          </ListItem>
+          <ListItem>
+            <Link className='c-link' to='/objects/cells'>Cells</Link>
+          </ListItem>
+          <ListItem>
+            <Link className='c-link' to='/objects/images'>Images</Link>
+          </ListItem>
+          <ListItem>
+            <Link className='c-link' to='/objects/medias'>Medias</Link>
+          </ListItem>
+          <ListItem>
+            <Link className='c-link' to='/objects/modals'>Modals</Link>
+          </ListItem>
+          <ListItem>
+            <Link className='c-link' to='/objects/drawers'>Drawers</Link>
+          </ListItem>
+          <ListItem>
+            <Link className='c-link' to='/objects/panels'>Panels</Link>
+          </ListItem>
+        </List>
+      </Cell>
+      <Cell width={85}>
+        {children}
+      </Cell>
+    </Grid>
   </Cell>
 )
 
