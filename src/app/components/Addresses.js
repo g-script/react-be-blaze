@@ -1,5 +1,6 @@
 import React from 'react'
-import { Address, Cell, Code, Grid, Heading, Paragraph } from 'react-be-blaze'
+import { Address, Cell, Grid, Heading, Paragraph, Table, TableBody, TableCell, TableHead, TableRow } from 'react-be-blaze'
+import Highlight from 'react-highlight'
 
 const Addresses = () => (
   <div>
@@ -18,16 +19,18 @@ const Addresses = () => (
         </Address>
       </Cell>
       <Cell width={50}>
-        <Code multiline>
+        <Highlight className='javascript'>
           {
-`<Address>
-  742 Evergreen Terrace,<br />
-  Springfield,<br />
-  80085,<br />
-  USA
-</Address>`
+`const Example = () => (
+  <Address>
+    742 Evergreen Terrace,<br />
+    Springfield,<br />
+    80085,<br />
+    USA
+  </Address>
+)`
           }
-        </Code>
+        </Highlight>
       </Cell>
     </Grid>
     <Heading size='large'>Heading</Heading>
@@ -41,18 +44,43 @@ const Addresses = () => (
         </Address>
       </Cell>
       <Cell width={50}>
-        <Code multiline>
+        <Highlight className='javascript'>
           {
-`<Address heading='The Simpsons,'>
-  742 Evergreen Terrace,<br />
-  Springfield,<br />
-  80085,<br />
-  USA
-</Address>`
+`const Example = () => (
+  <Address heading='The Simpsons,'>
+    742 Evergreen Terrace,<br />
+    Springfield,<br />
+    80085,<br />
+    USA
+  </Address>
+)`
           }
-        </Code>
+        </Highlight>
       </Cell>
     </Grid>
+    <Heading size='large'>Props</Heading>
+    <Table striped>
+      <TableHead>
+        <TableCell className='props-table__small-column'>Props</TableCell>
+        <TableCell>Values</TableCell>
+        <TableCell className='props-table__small-column'>Default</TableCell>
+        <TableCell>Description</TableCell>
+      </TableHead>
+      <TableBody>
+        <TableRow>
+          <TableCell className='props-table__small-column'>className</TableCell>
+          <TableCell>string</TableCell>
+          <TableCell className='props-table__small-column'>—</TableCell>
+          <TableCell>CSS class.</TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell className='props-table__small-column'>heading</TableCell>
+          <TableCell>string</TableCell>
+          <TableCell className='props-table__small-column'>—</TableCell>
+          <TableCell>Address title.</TableCell>
+        </TableRow>
+      </TableBody>
+    </Table>
   </div>
 )
 
