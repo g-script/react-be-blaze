@@ -1,79 +1,104 @@
 import classnames from 'classnames'
-import React, { PropTypes } from 'react'
+import React, { Component, PropTypes } from 'react'
 
-import { states } from '../misc/constants'
+const states = ['brand', 'info', 'warning', 'error', 'success']
 
-const Tab = ({ active, children, className, ...rest }) => {
-  className = classnames(
-    className,
-    'c-tabs__tab', {
-      'c-tabs__tab--active': active
+class Tabs extends Component {
+  static propTypes = {
+    children: PropTypes.arrayOf(PropTypes.element).isRequired,
+    className: PropTypes.string,
+    state: PropTypes.oneOf(states)
+  }
+
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      active: null
     }
-  )
+  }
 
-  return (
-    <div className={className} {...rest}>
-      {children}
-    </div>
-  )
-}
+  componentWillReceiveProps () {
+    this.setState({
+      active: null
+    })
+  }
 
-Tab.propTypes = {
-  active: PropTypes.bool,
-  children: PropTypes.any,
-  className: PropTypes.string
-}
+  buildHeadings () {
+    return this.props.children.map((child, index) => {
+      const { active, children, className, disabled, heading, headingClassName, onClick, state, ...rest } = child.props // eslint-disable-line no-unused-vars
+      const newClassName = classnames(
+        headingClassName,
+        'c-tab-heading', {
+          'c-tab-heading--active': active && this.state.active === null || this.state.active === index,
+          'c-tab-heading--disabled': disabled
+        }
+      )
 
-const Tabs = ({ children, className, headings, state, ...rest }) => {
-  className = classnames(
-    className,
-    'c-tabs', {
-      [`c-tabs--${state}`]: state
-    }
-  )
+      return (
+        <div className={newClassName} onClick={onClick || this.toggleTab.bind(this, index)} key={`heading__${index}`}>
+          {heading}
+        </div>
+      )
+    })
+  }
 
-  return (
-    <div className={className} {...rest}>
-      <div className='c-tabs__headings'>
-        {headings}
+  buildTabs () {
+    return this.props.children.map((child, index) => {
+      const { active, children, className, disabled, heading, headingClassName, onClick, state, ...rest } = child.props // eslint-disable-line no-unused-vars
+      const itemClassName = classnames(
+        className,
+        'c-tabs__tab', {
+          'c-tabs__tab--active': active && this.state.active === null || this.state.active === index
+        }
+      )
+
+      return (
+        <div className={itemClassName} key={`tab__${index}`} {...rest}>
+          {children}
+        </div>
+      )
+    })
+  }
+
+  toggleTab (index) {
+    this.setState({
+      active: index
+    })
+  }
+
+  render () {
+    const { active, children, className, disabled, heading, headingClassName, onClick, state, ...rest } = this.props // eslint-disable-line no-unused-vars
+    const tabsClassName = classnames(
+      className,
+      'c-tabs', {
+        [`c-tabs--${state}`]: state
+      }
+    )
+
+    return (
+      <div className={tabsClassName} {...rest}>
+        <div className='c-tabs__headings'>
+          {this.buildHeadings()}
+        </div>
+        {this.buildTabs()}
       </div>
-      {children}
-    </div>
-  )
+    )
+  }
 }
 
-Tabs.propTypes = {
-  children: PropTypes.any,
-  className: PropTypes.string,
-  headings: PropTypes.array,
-  state: PropTypes.oneOf(states)
-}
+const TabItem = () => <div>Missing Tabs container.</div>
 
-const TabHeading = ({ active, children, className, disabled, ...rest }) => {
-  className = classnames(
-    className,
-    'c-tab-headings', {
-      'c-tab-heading--active': active,
-      'c-tab-heading--disabled': disabled
-    }
-  )
-
-  return (
-    <div className={className} {...rest}>
-      {children}
-    </div>
-  )
-}
-
-TabHeading.propTypes = {
+TabItem.propTypes = {
   active: PropTypes.bool,
   children: PropTypes.any,
   className: PropTypes.string,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  heading: PropTypes.string.isRequired,
+  headingClassName: PropTypes.string
 }
 
 export {
-  Tab,
-  Tabs,
-  TabHeading
+  TabItem,
+  Tabs
 }
