@@ -1,7 +1,8 @@
 import classnames from 'classnames'
+import omit from 'lodash.omit'
 import React, { Component, PropTypes } from 'react'
 
-const states = ['brand', 'info', 'warning', 'error', 'success']
+import { states } from '../misc/constants'
 
 class Tabs extends Component {
   static propTypes = {
@@ -26,8 +27,8 @@ class Tabs extends Component {
 
   buildHeadings () {
     return this.props.children.map((child, index) => {
-      const { active, children, className, disabled, heading, headingClassName, onClick, state, ...rest } = child.props // eslint-disable-line no-unused-vars
-      const newClassName = classnames(
+      const { active, disabled, heading, headingClassName, onClick } = child.props
+      const className = classnames(
         headingClassName,
         'c-tab-heading', {
           'c-tab-heading--active': active && this.state.active === null || this.state.active === index,
@@ -36,7 +37,7 @@ class Tabs extends Component {
       )
 
       return (
-        <div className={newClassName} onClick={onClick || this.toggleTab.bind(this, index)} key={`heading__${index}`}>
+        <div className={className} onClick={onClick || this.toggleTab.bind(this, index)} key={`heading__${index}`}>
           {heading}
         </div>
       )
@@ -45,7 +46,8 @@ class Tabs extends Component {
 
   buildTabs () {
     return this.props.children.map((child, index) => {
-      const { active, children, className, disabled, heading, headingClassName, onClick, state, ...rest } = child.props // eslint-disable-line no-unused-vars
+      const rest = omit(child.props, ['active', 'children', 'className', 'disabled', 'heading', 'headingClassName', 'onClick'])
+      const { active, children, className } = child.props
       const itemClassName = classnames(
         className,
         'c-tabs__tab', {
@@ -68,7 +70,8 @@ class Tabs extends Component {
   }
 
   render () {
-    const { active, children, className, disabled, heading, headingClassName, onClick, state, ...rest } = this.props // eslint-disable-line no-unused-vars
+    const rest = omit(this.props, ['children', 'className', 'state'])
+    const { className, state } = this.props
     const tabsClassName = classnames(
       className,
       'c-tabs', {
