@@ -13,7 +13,7 @@ import Panels from './objects/Panels'
 const Objects = () => (
   <Cell>
     <Heading size='super'>Objects</Heading>
-    <Alert state='success' closable={false}>Objects docs are up to date!</Alert>
+    <Alert state='success' closable>Objects docs are up to date!</Alert>
     <Containers />
     <Grids />
     <Cells />
