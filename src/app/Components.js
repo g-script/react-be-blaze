@@ -1,6 +1,7 @@
 import React from 'react'
 import { Alert, Cell, Heading, Link, Paragraph } from 'react-be-blaze'
 
+import Accordions from './components/Accordions'
 import Addresses from './components/Addresses'
 import Alerts from './components/Alerts'
 
@@ -13,6 +14,7 @@ const Components = () => (
     </Paragraph>
     <Addresses />
     <Alerts />
+    <Accordions />
   </Cell>
 )
 
