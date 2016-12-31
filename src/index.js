@@ -25,7 +25,7 @@ import Overlay from './components/Overlay'
 import { Progress, ProgressBar } from './components/Progress'
 import Range from './components/Range'
 import { Table, TableBody, TableCell, TableHead, TableRow } from './components/Table'
-import { Tab, Tabs, TabHeading } from './components/Tab'
+import { TabItem, Tabs } from './components/Tab'
 import Tag from './components/Tag'
 import Toast from './components/Toast'
 import Toggle from './components/Toggle'
@@ -85,9 +85,8 @@ export {
   TableCell,
   TableHead,
   TableRow,
-  Tab,
+  TabItem,
   Tabs,
-  TabHeading,
   Tag,
   Toast,
   Toggle,
