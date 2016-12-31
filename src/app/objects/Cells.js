@@ -24,7 +24,8 @@ const Example = () => (
         size={…}
         width={…}>
     Example
-  </Cell>)
+  </Cell>
+)
 
 export default Example`
       }
