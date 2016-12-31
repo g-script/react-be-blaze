@@ -20,7 +20,8 @@ const Example = () => (
         responsiveness={…}
         wrap={…}>
     Example
-  </Grid>)
+  </Grid>
+)
 
 export default Example`
       }

@@ -13,7 +13,7 @@ const Images = () => (
         `import React from 'react'
 import { Image } from 'react-be-blaze'
 
-const Example = () => <Image className={…} src={…} />
+const Example = () => (<Image className={…} src={…} />)
 
 export default Example`
       }
