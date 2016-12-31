@@ -36,8 +36,7 @@ const Accordions = () => (
         </Highlight>
       </Cell>
     </Grid>
-    <Heading size='large'>Props</Heading>
-    <Heading size='medium'>Accordion</Heading>
+    <Heading size='large'>Accordion Props</Heading>
     <Table striped>
       <TableHead>
         <TableCell className='props-table__small-column'>Props</TableCell>
@@ -54,7 +53,7 @@ const Accordions = () => (
         </TableRow>
       </TableBody>
     </Table>
-    <Heading size='medium'>AccordionItem</Heading>
+    <Heading size='large'>AccordionItem Props</Heading>
     <Table striped>
       <TableHead>
         <TableCell className='props-table__small-column'>Props</TableCell>
