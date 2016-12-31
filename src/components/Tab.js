@@ -1,8 +1,8 @@
 import classnames from 'classnames'
-import omit from 'lodash.omit'
 import React, { Component, PropTypes } from 'react'
 
 import { states } from '../misc/constants'
+import { omit } from '../misc/utils'
 
 class Tabs extends Component {
   static propTypes = {

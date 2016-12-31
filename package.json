@@ -54,7 +54,6 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-react": "^6.8.0",
     "eslint-plugin-standard": "^2.0.1",
-    "lodash.omit": "^4.5.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "webpack": "^1.13.3",
