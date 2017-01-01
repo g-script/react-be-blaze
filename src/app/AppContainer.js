@@ -1,17 +1,9 @@
 import React from 'react'
-import { Container, Grid, Nav, NavItem } from 'react-be-blaze'
+import { Container, Nav, NavItem } from 'react-be-blaze'
 import { IndexLink, Link } from 'react-router'
 
 import 'blaze/dist/blaze.min.css'
 import 'highlight.js/styles/monokai-sublime.css'
-
-const responsiveness = [{
-  size: 'small',
-  behavior: 'full'
-}, {
-  size: 'medium',
-  behavior: 'full'
-}]
 
 const AppContainer = ({ children }) => (
   <div>
@@ -30,9 +22,7 @@ const AppContainer = ({ children }) => (
       </NavItem>
     </Nav>
     <Container size='xlarge' style={{ padding: '5em 0' }}>
-      <Grid wrap align='top' responsiveness={responsiveness}>
-        {children}
-      </Grid>
+      {children}
     </Container>
   </div>
 )
