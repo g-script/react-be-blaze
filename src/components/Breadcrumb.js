@@ -1,7 +1,9 @@
 import classnames from 'classnames'
 import React, { PropTypes } from 'react'
 
-const Breadcrumb = ({ className, crumbs, ...rest }) => {
+import { Link } from './Typography'
+
+const Breadcrumb = ({ children, className, ...rest }) => {
   className = classnames(
     className,
     'c-breadcrumbs'
@@ -9,28 +11,38 @@ const Breadcrumb = ({ className, crumbs, ...rest }) => {
 
   return (
     <ul className={className} {...rest}>
-      {crumbs.forEach((crumb, index) => {
-        const isCurrentCrumb = index === crumbs.length - 1
-        const crumbClassName = `c-breadcrumbs__crumb${isCurrentCrumb && ' c-text--loud'}`
-
-        return (
-          <li className={crumbClassName}>
-            {isCurrentCrumb ? crumb.label : <a className='c-link' href={crumb.href}>{crumb.label}</a>}
-          </li>
-        )
-      })}
+      {children}
     </ul>
   )
 }
 
 Breadcrumb.propTypes = {
-  className: PropTypes.string,
-  crumbs: PropTypes.arrayOf(
-    PropTypes.shape({
-      href: PropTypes.string,
-      label: PropTypes.string
-    })
-  ).isRequired
+  children: PropTypes.any,
+  className: PropTypes.string
 }
 
-export default Breadcrumb
+const Crumb = ({ active, children, className, ...rest }) => {
+  className = classnames(
+    className,
+    'c-breadcrumbs__crumb', {
+      'c-text--loud': active
+    }
+  )
+
+  return (
+    <li className={className}>
+      {active ? children : <Link {...rest}>{children}</Link>}
+    </li>
+  )
+}
+
+Crumb.propTypes = {
+  active: PropTypes.bool,
+  children: PropTypes.any,
+  className: PropTypes.string
+}
+
+export {
+  Breadcrumb,
+  Crumb
+}
