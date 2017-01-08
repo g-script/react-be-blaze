@@ -13,7 +13,7 @@ import Address from './components/Address'
 import Alert from './components/Alert'
 import Avatar from './components/Avatar'
 import Badge from './components/Badge'
-import Breadcrumb from './components/Breadcrumb'
+import { Breadcrumb, Crumb } from './components/Breadcrumb'
 import Bubble from './components/Bubble'
 import { Button, ButtonGroup } from './components/Button'
 import { Card, CardBody, CardDivider, CardFooter, CardHeader, CardItem } from './components/Card'
@@ -56,6 +56,7 @@ export {
   Avatar,
   Badge,
   Breadcrumb,
+  Crumb,
   Bubble,
   Button,
   ButtonGroup,

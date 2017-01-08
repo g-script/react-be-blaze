@@ -21,13 +21,23 @@ Paragraph.propTypes = {
   className: PropTypes.string
 }
 
-const Link = ({ children, className, state, ...rest }) => {
+const Link = ({ children, className, customLink, plain, state, ...rest }) => {
   className = classnames(
-    className,
-    'c-link', {
-      [`c-link--${state}`]: state
+    className, {
+      'c-link': !plain,
+      [`c-link--${state}`]: state && !plain
     }
   )
+
+  if (customLink) {
+    const CustomLink = customLink
+
+    return (
+      <CustomLink className={className} {...rest}>
+        {children}
+      </CustomLink>
+    )
+  }
 
   return (
     <a className={className} {...rest}>
@@ -39,7 +49,16 @@ const Link = ({ children, className, state, ...rest }) => {
 Link.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
+  customLink: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.string
+  ]),
+  plain: PropTypes.bool,
   state: PropTypes.oneOf(states)
+}
+
+Link.defaultProps = {
+  plain: false
 }
 
 const Highlight = ({ children, className, ...rest }) => {
