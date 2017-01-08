@@ -21,6 +21,7 @@ import Accordions from './components/Accordions'
 import Addresses from './components/Addresses'
 import Alerts from './components/Alerts'
 import Avatars from './components/Avatars'
+import Badges from './components/Badges'
 
 const App = () => (
   <Router history={hashHistory}>
@@ -43,6 +44,7 @@ const App = () => (
         <Route path='accordions' component={Accordions} />
         <Route path='alerts' component={Alerts} />
         <Route path='avatars' component={Avatars} />
+        <Route path='badges' component={Badges} />
       </Route>
     </Route>
   </Router>

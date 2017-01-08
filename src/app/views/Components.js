@@ -24,6 +24,9 @@ const Components = ({ children }) => (
         <ListItem>
           <Link className='c-link' to='/components/avatars'>Avatars</Link>
         </ListItem>
+        <ListItem>
+          <Link className='c-link' to='/components/badges'>Badges</Link>
+        </ListItem>
       </List>
     </Cell>
     <Cell width={85}>

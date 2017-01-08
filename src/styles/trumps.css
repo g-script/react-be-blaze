@@ -5,3 +5,7 @@
 .fix-table-cell-with-child-element {
   display: table-cell !important;
 }
+
+.c-badge {
+  margin: 0 .2em !important;
+}
