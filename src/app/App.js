@@ -22,6 +22,7 @@ import Addresses from './components/Addresses'
 import Alerts from './components/Alerts'
 import Avatars from './components/Avatars'
 import Badges from './components/Badges'
+import Breadcrumbs from './components/Breadcrumbs'
 
 const App = () => (
   <Router history={hashHistory}>
@@ -45,6 +46,7 @@ const App = () => (
         <Route path='alerts' component={Alerts} />
         <Route path='avatars' component={Avatars} />
         <Route path='badges' component={Badges} />
+        <Route path='breadcrumbs' component={Breadcrumbs} />
       </Route>
     </Route>
   </Router>

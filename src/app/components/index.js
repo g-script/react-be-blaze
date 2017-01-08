@@ -5,6 +5,7 @@ import Addresses from '../components/Addresses'
 import Alerts from '../components/Alerts'
 import Avatars from '../components/Avatars'
 import Badges from '../components/Badges'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 const AllComponents = () => (
   <div>
@@ -13,6 +14,7 @@ const AllComponents = () => (
     <Alerts />
     <Avatars />
     <Badges />
+    <Breadcrumbs />
   </div>
 )
 
