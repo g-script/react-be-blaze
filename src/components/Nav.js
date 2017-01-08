@@ -1,6 +1,8 @@
 import classnames from 'classnames'
 import React, { PropTypes } from 'react'
 
+import { Link } from './Typography'
+
 import { positions, states } from '../misc/constants'
 
 const Nav = ({ children, className, fixed, inline, position, ...rest }) => {
@@ -28,7 +30,7 @@ Nav.propTypes = {
   position: PropTypes.oneOf(positions)
 }
 
-const NavItem = ({ active, children, className, customLink, noClick, link, right, state, ...rest }) => {
+const NavItem = ({ active, children, className, customLink, href, noClick, right, state, ...rest }) => {
   className = classnames(
     className, {
       'c-nav__item': !noClick,
@@ -39,21 +41,14 @@ const NavItem = ({ active, children, className, customLink, noClick, link, right
     }
   )
 
-  if (customLink) {
-    const CustomLink = customLink
+  if (customLink || href) {
+    customLink = customLink ? { customLink } : {}
+    href = href ? { href } : {}
 
     return (
-      <CustomLink className={className} {...rest}>
+      <Link className={className} plain {...customLink} {...href} {...rest}>
         {children}
-      </CustomLink>
-    )
-  }
-
-  if (link) {
-    return (
-      <a href={link} className={className} {...rest}>
-        {children}
-      </a>
+      </Link>
     )
   }
 
@@ -68,11 +63,9 @@ NavItem.propTypes = {
   active: PropTypes.bool,
   children: PropTypes.any,
   className: PropTypes.string,
-  customLink: PropTypes.oneOfType([
-    PropTypes.func,
-    PropTypes.string
-  ]),
-  link: PropTypes.string,
+  customLink: PropTypes.any,
+  href: PropTypes.string,
+  noClick: PropTypes.bool,
   right: PropTypes.bool,
   state: PropTypes.oneOf(states)
 }
