@@ -14,7 +14,7 @@ const Breadcrumbs = () => (
         <Breadcrumb>
           <Crumb customLink={IndexLink} to='/'>Home</Crumb>
           <Crumb customLink={Link} to='/components'>Components</Crumb>
-          <Crumb customLink={Link} to='/components/breadcrumbs' active>Breadcrumbs</Crumb>
+          <Crumb active>Breadcrumbs</Crumb>
         </Breadcrumb>
       </Cell>
       <Cell width={50}>
@@ -22,9 +22,9 @@ const Breadcrumbs = () => (
           {
 `const Example = () => (
   <Breadcrumb>
-    <Crumb customLink={IndexLink} to='/'>Home</Crumb>
-    <Crumb customLink={IndexLink} to='/components'>Components</Crumb>
-    <Crumb customLink={IndexLink} to='/components/breadcrumbs' active>Breadcrumbs</Crumb>
+    <Crumb href='#'>Home</Crumb>
+    <Crumb href='#/components'>Components</Crumb>
+    <Crumb active>Breadcrumbs</Crumb>
   </Breadcrumb>
 )`
           }
