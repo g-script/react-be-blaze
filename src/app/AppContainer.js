@@ -17,7 +17,7 @@ const AppContainer = ({ children }) => (
       <NavItem customLink={Link} to='/components' state='brand' activeClassName='c-nav__item--active'>
         Components
       </NavItem>
-      <NavItem right state='error' link='http://github.com/g-script/react-be-blaze' target='_blank'>
+      <NavItem right state='error' href='http://github.com/g-script/react-be-blaze' target='_blank'>
         GitHub
       </NavItem>
     </Nav>
