@@ -1,20 +1,29 @@
 [npm:img]: https://img.shields.io/npm/v/react-be-blaze.svg?style=flat-square
 [npm:url]: https://www.npmjs.org/package/react-be-blaze
-
 [standard:img]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [standard:url]: http://standardjs.com
-
 [dependencies:img]: https://david-dm.org/g-script/react-be-blaze.svg?style=flat-square
 [dependencies:url]: https://github.com/g-script/react-be-blaze/blob/master/package.json#L55
-
 [peer_dependencies:img]: https://david-dm.org/g-script/react-be-blaze/peer-status.svg?style=flat-square
 [peer_dependencies:url]: https://david-dm.org/g-script/react-be-blaze?type=peer
-
 [build:img]: https://travis-ci.org/g-script/react-be-blaze.svg?branch=master
 [build:url]: https://travis-ci.org/g-script/react-be-blaze
-
 [license:img]: https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square
 [license:url]: https://opensource.org/licenses/MIT
+
+# 🚨🚨🚨⚠️⚠️⚠️ DISCONTINUED PROJECT ⚠️⚠️⚠️🚨🚨🚨
+
+This project is outdated and unmaintained. I’ll be glad to transfer it to whoever is interested. Don’t hesitate to [contact me](mailto:goudry.nicolas@gmail.com).
+
+---
+
+---
+
+---
+
+---
+
+---
 
 # react-be-blaze &middot; [![NPM version][npm:img]][npm:url] &middot; [![Standard - JavaScript Style Guide][standard:img]][standard:url] &middot; [![Dependencies][dependencies:img]][dependencies:url] &middot; [![Peer Dependencies][peer_dependencies:img]][peer_dependencies:url] [![Build Status][build:img]][build:url] &middot; [![License: MIT][license:img]][license:url]
 
@@ -28,7 +37,7 @@ Check out the [demo][demo]! :warning: UNDER CONSTRUCTION :warning:
 
 [BlazeCSS][blaze] is, as written on their website at the time of writing, an “ open source modular CSS toolkit providing great structure for building websites quickly ”.
 
-In my opinion, this toolkit — *or framework, take your pick* — has a great advantage compared to well-known CSS frameworks like [Twitter Bootstrap][bootstrap] or [Zurb Foundation][foundation]: it won’t handle things for you.
+In my opinion, this toolkit — _or framework, take your pick_ — has a great advantage compared to well-known CSS frameworks like [Twitter Bootstrap][bootstrap] or [Zurb Foundation][foundation]: it won’t handle things for you.
 
 **You** are the master of your project and **you** have to make the right choices to fit your needs.
 
@@ -42,13 +51,13 @@ Because CSS is globally scoped, it is often difficult to apply a class of `.acti
 
 ```css
 .button {
-  border        : 1px solid grey;
-  border-radius : 2px;
+  border: 1px solid grey;
+  border-radius: 2px;
 }
 
 .nav-item {
-  background : transparent;
-  border     : 1px solid black;
+  background: transparent;
+  border: 1px solid black;
 }
 ```
 
@@ -80,13 +89,13 @@ Let’s take a look at our complete CSS:
 
 ```css
 .button {
-  border        : 1px solid grey;
-  border-radius : 2px;
+  border: 1px solid grey;
+  border-radius: 2px;
 }
 
 .nav-item {
-  background : transparent;
-  border     : 1px solid black;
+  background: transparent;
+  border: 1px solid black;
 }
 
 .active {
@@ -110,7 +119,7 @@ And consider the following HTML:
 </main>
 ```
 
-The `.active` `.nav-item` will have a `blue` `border-color` and a `red` `background` — *pretty ugly, right?*.
+The `.active` `.nav-item` will have a `blue` `border-color` and a `red` `background` — _pretty ugly, right?_.
 
 Furthermore, the `.active` `.button` will have a `blue` `border-color` and a `red` `background` too!
 
@@ -118,7 +127,7 @@ That’s the **BIG** problem about CSS, we can even conclude that with our dummy
 
 ## What
 
-We now are aware of this problem, and guess what? It already has been solved! Well, **in fact**, it has only been *virtually* solved.
+We now are aware of this problem, and guess what? It already has been solved! Well, **in fact**, it has only been _virtually_ solved.
 
 A bunch of high skilled developer has been working on this and created patterns and standards. You might know some, but here we are only going to speak about <abbr title="Objet-Oriented CSS">OOCSS</abbr>, <abbr title="Block-Element-Modifier">BEM</abbr> and <abbr title="Inverted Triangle CSS">ITCSS</abbr>.
 
@@ -130,13 +139,13 @@ Its all about leveraging [CSS Specificity][css specificity] by applying multiple
 
 ### BEM
 
-The BEM pattern is also used in a less knowned CSS framework - *but still, it‘s made by Google* - : [material-design-lite][mdl].
+The BEM pattern is also used in a less knowned CSS framework - _but still, it‘s made by Google_ - : [material-design-lite][mdl].
 
 BEM principle is pretty simple: all CSS classes follow a nested HTML structure, composed as elements in blocks with the ability to have modifiers expressing their state. Just read [BlazeCSS docs][blaze docs] to see how it looks!
 
 ### ITCSS
 
-ITCSS is different from OOCSS and BEM because it‘s more about grouping styles in strictly-ruled categories. If you want to understand how it works, I recommend you to take 5 minutes - *really, it worth it* - and read [these slides about ITCSS by Harry Roberts][itcss]!
+ITCSS is different from OOCSS and BEM because it‘s more about grouping styles in strictly-ruled categories. If you want to understand how it works, I recommend you to take 5 minutes - _really, it worth it_ - and read [these slides about ITCSS by Harry Roberts][itcss]!
 
 ## How
 
@@ -150,7 +159,7 @@ Actually, react-be-blaze is no more than a library providing you ready-to-use co
 
 ### Why would I choose it?
 
-It‘s **small**, not such as BlazeCSS - *which isn‘t included* -, but still :
+It‘s **small**, not such as BlazeCSS - _which isn‘t included_ -, but still :
 
 ```shell
                 Asset     Size
@@ -167,14 +176,14 @@ It‘s **easy to use**:
 
 ```javascript
 // ESModules — so cool!
-import { Button } from 'react-be-blaze'
+import { Button } from "react-be-blaze";
 
 // ES2015 — meh.
-const { Button } = require('react-be-blaze')
+const { Button } = require("react-be-blaze");
 
 // ES5 — really?
-var reactBeBlaze = require('react-be-blaze')
-var Button = reactBeBlaze.Button
+var reactBeBlaze = require("react-be-blaze");
+var Button = reactBeBlaze.Button;
 ```
 
 It has a **great [demo][demo]**! :warning: UNDER CONSTRUCTION :warning:
@@ -187,16 +196,12 @@ This project is open-source, so you are welcome to contribute to it! All you hav
 
 [demo]: https://g-script.github.io/react-be-blaze
 [contributing]: CONTRIBUTING.md
-
 [blaze]: http://blazecss.com
 [blaze docs]: http://blazecss.com/objects/grid/
-
 [bootstrap]: http://getbootstrap.com
 [bootstrap docs]: http://getbootstrap.com/css/#buttons
-
 [foundation]: http://foundation.zurb.com
 [foundation docs]: http://foundation.zurb.com/sites/docs/button.html
-
 [mdl]: https://getmdl.io/started
 [itcss]: https://speakerdeck.com/dafed/managing-css-projects-with-itcss
 [css specificity]: https://www.w3.org/TR/css3-selectors/#specificity
